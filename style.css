@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 500px;
+}
+header{
+    width: 100%;
+    height: 80px;
+}
+
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+header .header-content menu nav{
+    display: flex;
+}
+
+header .header-content menu nav .navbar-links{
+    margin-right: 305px;
+}
+header .header-content menu nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+
+header .header-content menu nav ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+
+header .header-content menu nav ul li:last-child{
+    margin-right: 0;
+}
+
+header .header-content menu nav ul li a{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+}
+
+header .header-content menu nav ul li:hover a{
+    color: #2196F3;
+}
+
+header .header-content menu nav ul li{
+    height: 80px;
+    border-bottom: 5px solid transparent;
+    transition: 0.5s ease;
+    
+}
+header .header-content menu nav ul li:hover{
+    border-color:  #2196F3;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .promo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 94px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+main .promo .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main .promo .promo-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    z-index: 2;
+}
+
+main .promo .promo-content h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+main .promo .promo-content button{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+main .skills{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin-bottom: 94px;
+}
+
+
+main .skills .skills-blog{
+    width: 270px;
+}
+
+main .skills .skills-blog .skills-blog_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+main .skills .skills-blog h3{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+main .skills .skills-blog p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+main .about{
+    width: 1170px;
+    margin-bottom: 94px;
+}
+main .about h3{
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+main .about .about-blog{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .about .about-blog .about-blog__item{
+    display: flex;
+    align-items: flex-end;
+    width: 370px;
+    height: 294px;
+    background-image: url(../img/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .about .about-blog .img-2{
+    background-image: url(../img/2.jpg);
+}
+
+main .about .about-blog .img-3{
+    background-image: url(../img/3.jpg);
+}
+
+main .about .about-blog .about-blog__item .about-blog__desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+main .team{
+    width: 100%;
+    padding: 94px 0;
+    background: #F5F4FA;
+}
+
+main .team .team-content{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+main .team .team-content h3{
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+main .team .team-content .team-content__blog{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .team .team-content .team-content__blog .team-content__card{
+    width: 270px;
+    height: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+main .team .team-content .team-content__blog .team-content__card .card-img{
+    margin-bottom: 30px;
+}
+
+main .team .team-content .team-content__blog .team-content__card .card-img img{
+    width: 100%;
+}
+main .team .team-content .team-content__blog .team-content__card h4{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+main .team .team-content .team-content__blog .team-content__card p{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 16px;
+}
+
+main .team .team-content .team-content__blog .team-content__card .card-link{
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+main .team .team-content .team-content__blog .team-content__card .card-link div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #AFB1B8;
+    transition: 0.5s;
+}
+
+main .team .team-content .team-content__blog .team-content__card .card-link div:hover{
+    background-color: #2196F3;
+    color: white;
+}
